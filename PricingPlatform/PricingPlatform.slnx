@@ -1,0 +1,46 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/services/" />
+  <Folder Name="/src/services/ApiGateway/">
+    <Project Path="src/services/ApiGateway/ApiGateway/ApiGateway.csproj" Id="629635a6-c5cb-417c-b7a5-d32dfb3706d7" />
+  </Folder>
+  <Folder Name="/src/services/PricingService/">
+    <Project Path="src/services/PricingService/PricingService.Api/PricingService.Api.csproj" />
+    <Project Path="src/services/PricingService/PricingService.Application/PricingService.Application.csproj" />
+    <Project Path="src/services/PricingService/PricingService.Domain/PricingService.Domain.csproj" />
+    <Project Path="src/services/PricingService/PricingService.Infrastructure/PricingService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/services/RulesService/">
+    <Project Path="src/services/RulesService/RulesService.Api/RulesService.Api.csproj" Id="61a6745a-248c-45b6-8303-690cffebcdbb" />
+    <Project Path="src/services/RulesService/RulesService.Application/RulesService.Application.csproj" Id="1b32dde4-b9fe-4168-9240-b453030a4148" />
+    <Project Path="src/services/RulesService/RulesService.Domain/RulesService.Domain.csproj" Id="70d754bf-46d7-4a7b-9973-0134f6961c34" />
+    <Project Path="src/services/RulesService/RulesService.Infrastructure/RulesService.Infrastructure.csproj" Id="116790a4-3fef-4d0e-a9cd-30bbc09976c2" />
+  </Folder>
+  <Folder Name="/src/services/shared/" />
+  <Folder Name="/src/services/shared/PricingPlatform.Contracts/">
+    <Project Path="src/services/shared/PricingPlatform.Contracts/PricingPlatform.Contracts/PricingPlatform.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/services/shared/PricingPlatform.Engine/">
+    <Project Path="src/services/shared/PricingPlatform.Engine/PricingPlatform.Engine/PricingPlatform.Engine.csproj" />
+  </Folder>
+  <Folder Name="/src/services/shared/PricingPlatform.Infrastructure.Logging/">
+    <Project Path="src/services/shared/PricingPlatform.Infrastructure.Logging/PricingPlatform.Infrastructure.Logging/PricingPlatform.Infrastructure.Logging.csproj" Id="ffa86c1f-6f60-4825-93a8-e6b9528fe11d" />
+  </Folder>
+  <Folder Name="/src/services/shared/PricingPlatform.SharedKernel/">
+    <Project Path="src/services/shared/PricingPlatform.SharedKernel/PricingPlatform.SharedKernel/PricingPlatform.SharedKernel.csproj" Id="3bd8daf8-cc6f-4029-b39d-a72cbe528a3a" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Integration/">
+    <Project Path="tests/Integration/PricingService.IntegrationTests/PricingService.IntegrationTests.csproj" Id="93d8a721-3ffe-46db-8780-3ea1b72f2229" />
+  </Folder>
+  <Folder Name="/tests/Performance/">
+    <Project Path="tests/Performance/PricingPlatform.Benchmarks/PricingPlatform.Benchmarks.csproj" Id="cf47dc11-73d7-4169-8681-f7a3a089b430" />
+  </Folder>
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/PricingPlatform.Engine.Tests/PricingPlatform.Engine.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: .
+      dockerfile: src/services/ApiGateway/ApiGateway/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - pricing-service
+      - rules-service
+    networks:
+      - pricing-platform
+
+  pricing-service:
+    container_name: pricing-service
+    build:
+      context: .
+      dockerfile: src/services/PricingService/PricingService.Api/Dockerfile
+    ports:
+     - "5001:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - pricing-platform
+
+  rules-service:
+    container_name: rules-service
+    build:
+      context: .
+      dockerfile: src/services/RulesService/RulesService.Api/Dockerfile
+    ports:
+      - "5002:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - pricing-platform
+
+networks:
+  pricing-platform:
+    driver: bridge
