@@ -67,6 +67,12 @@ Response
 }
 
 # RulesService
+
+## RuleType
+  WeightTier 1
+  RemoteAreaSurcharge 2
+  TimeWindowPromotion 3
+
 POST /rules
 {
   "type": 2,
